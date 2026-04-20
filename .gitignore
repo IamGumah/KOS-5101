@@ -255,7 +255,6 @@ misc/multilevel_group_intercept_slope.stan
 misc/multilevel_group_intercept_slope.exe
 misc/process_model4.stan
 misc/process_model4.exe
-irt/pcm_output/pcm-20260419192019_4.csv
-irt/pcm_output/pcm-20260419192019_2.csv
-irt/pcm_output/pcm-20260419192019_3.csv
-irt/pcm_output/pcm-20260419192019_1.csv
+irt/update_nb.py
+irt/nb_extract.md
+irt/extract_nb.py

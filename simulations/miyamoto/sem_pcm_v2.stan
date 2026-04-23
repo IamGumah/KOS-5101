@@ -1,4 +1,4 @@
-// sem_pcm_v2.stan  — PCM-SEM 통합 모형 (완전 식별)
+ 
 data {
   int<lower=1> N; int<lower=1> I; int<lower=1> K;
   int<lower=1, upper=I-1>   I_X;
@@ -50,6 +50,6 @@ model {
 generated quantities {
   real indirect_effect = b1*b2;
   real total_effect    = g1+indirect_effect;
-  real prop_mediated   = (fabs(total_effect)>1e-10)
+  real prop_mediated   = (abs(total_effect)>1e-10)
                          ? indirect_effect/total_effect : not_a_number();
 }
